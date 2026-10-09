@@ -1,0 +1,48 @@
+﻿/* StatusBadge — Requirements: 15.2, 15.4 */
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Applied → blue */
+.badge--applied {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+/* Assessment → yellow */
+.badge--assessment {
+  background-color: #fef9c3;
+  color: #854d0e;
+}
+
+/* Interview → orange */
+.badge--interview {
+  background-color: #ffedd5;
+  color: #9a3412;
+}
+
+/* Selected → green */
+.badge--selected {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* Rejected → red */
+.badge--rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Fallback for unknown status values */
+.badge--unknown {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}

@@ -1,0 +1,52 @@
+﻿/* Spinner — Requirements: 15.2, 18.1, 18.2 */
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Full-viewport overlay for initial page loads */
+.spinner--page {
+  width: 100%;
+  min-height: 60vh;
+}
+
+/* Compact inline spinner for form submissions */
+.spinner--inline {
+  width: 1.25rem;
+  height: 1.25rem;
+  min-height: unset;
+}
+
+.spinner__ring {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid #e2e8f0;
+  border-top-color: #4a90e2;
+  border-radius: 50%;
+  animation: spinner-rotate 0.7s linear infinite;
+}
+
+.spinner--inline .spinner__ring {
+  width: 1rem;
+  height: 1rem;
+  border-width: 2px;
+}
+
+.spinner__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@keyframes spinner-rotate {
+  to { transform: rotate(360deg); }
+}

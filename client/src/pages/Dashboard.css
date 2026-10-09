@@ -1,0 +1,153 @@
+.dashboard {
+  width: 100%;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 0.35rem;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-card--total {
+  border-left: 4px solid #4a90e2;
+}
+
+.stat-card__label {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.stat-card__value {
+  font-size: 2rem;
+  color: #111827;
+}
+
+.recent-section {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+}
+
+.section-header h2 {
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.recent-card:last-child {
+  border-bottom: none;
+}
+
+.recent-card__main h3 {
+  color: #111827;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.recent-card__main p {
+  color: #374151;
+  font-weight: 500;
+}
+
+.recent-card__main span {
+  display: block;
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}
+
+.recent-card__meta {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.recent-card__meta time {
+  color: #6b7280;
+  font-size: 0.8rem;
+}
+
+.dashboard-error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.dashboard-empty {
+  color: #6b7280;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recent-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .recent-card__meta {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.5rem;
+  }
+}
