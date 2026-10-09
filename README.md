@@ -148,9 +148,9 @@
 
 *```bash*
 
-*git clone <YOUR\_GITHUB\_REPOSITORY\_URL>*
+*git clone https://github.com/Ranjithkumar352/jobtrack.git*
 
-*cd job-track*
+*cd jobtrack*
 
 *```*
 
@@ -464,23 +464,18 @@
 
 
 
-*### Backend tests*
+### Backend verification
+
+The backend API was manually verified against the running MongoDB-backed server.
+
+Verified endpoints:
+- `GET /api/health`
+- `GET /api/applications`
+- `GET /api/dashboard/stats`
+
+Automated backend test files have not yet been added.
 
 
-
-*From the `server` directory:*
-
-
-
-*```bash*
-
-*npm test*
-
-*```*
-
-
-
-*The backend package includes Vitest and Supertest for testing. Run this command to execute the backend test suite.*
 
 
 
@@ -488,11 +483,23 @@
 
 
 
-*The project was developed incrementally, with implementation, debugging, and verification performed in stages. Kiro was used for development planning and specification-oriented work, alongside AI-assisted coding and testing support.*
+## AI Development Tool: Kiro
 
+**Selected Tool:** Kiro
 
+Kiro was used during the initial planning and specification phase of JobTrack. Its spec-driven workflow helped organize project requirements, application design, and implementation tasks. After reaching the available usage limit, development continued through hands-on coding, debugging, and separate AI-assisted guidance.
 
-*The final workflow includes frontend unit tests, production-build verification, and manual API and application checks.*
+### Specific Tasks Completed Using Kiro
+
+1. **Requirements definition:** Organized requirements for job application management, status tracking, search, and filtering.
+2. **Application design:** Prepared the design specification for the MERN stack application.
+3. **Implementation planning:** Organized development work into smaller tasks using the project task specification.
+
+### Development and Testing Experience
+
+The frontend test suite completed with 39 passing tests, and the Vite production build succeeded. The backend health, applications list, and dashboard statistics endpoints were manually verified.
+
+This workflow helped organize development, troubleshoot issues, and verify the implementation before submission.
 
 
 
